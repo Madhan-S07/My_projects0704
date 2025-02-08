@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Rock-paper-Scissors</title>
+    <link rel="stylesheet" href="Rps.css">
+
+</head>
+
+<body>
+
+    <div class="Main">
+
+        <p id="para">Rock paper scissors</p>
+
+    
+    
+        <div class="icon">
+            <button onclick="playerGame('Rock')"><img src="images/rock.png" alt="Rock"></button>
+        </div>
+    
+    
+        <div class="icon">
+            <button onclick="playerGame('Paper')"><img src="images/paper.png" alt="Paper"></button>
+        </div>
+    
+    
+        <div class="icon">
+    
+            <button onclick="playerGame('Scissors')"><img class="third" src="images/scissors.png" alt="Scissors"></button>   
+        </div>
+    
+       
+        <p class="updateMain"></p>
+        <p class="updateResult"></p>
+        <p class="updateScore" onclick="updateScore()"></p>
+    
+    
+        
+        <button class="reset" onclick="    
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.removeItem('score');
+        updateScore();
+        
+        ">Reset score</button>
+    
+
+    </div>
+    
+   
+
+
+
+<script src="Rps.js"></script>
+
+    
+</body>
+
+</html>
